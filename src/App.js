@@ -34,15 +34,15 @@ const ops = ['/', '*', '+', '-', '.'];
       <div className="operator">
 <button>/</button>
 <button>*</button>
-<button>-</button>
+<button>-</button>  
 <button>+</button>
-<button>Del</button>
+<button>%</button>
 
       </div>
       <div className="specialOperator">
         <button>AC</button>
-        <button>%</button>
-        <button>()</button>
+        <button>( )</button>
+        <button>Del</button>
       </div>
 
       </div>
