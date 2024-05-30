@@ -10,7 +10,9 @@ function App() {
 
   return (
     <div className="App">
-      <div className ="Display">
+      <div className="calculator">
+
+      <div className ="display">
 <span>(0)</span> 0
 
       </div>
@@ -27,6 +29,12 @@ function App() {
 <button>+</button>
 <button>Del</button>
 
+      </div>
+      <div className="specialOperator">
+        <button>AC</button>
+        <button>%</button>
+        <button>()</button>
+      </div>
 
       </div>
     </div>
