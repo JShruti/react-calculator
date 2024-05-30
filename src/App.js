@@ -1,9 +1,16 @@
-function App() {
+import { useState } from "react";
+ function App() {
+// const[calc, setCalc] = useState(0);
+const [result, setResult]=useState(0);
+
+
+
+  
   const numbers = () => {
     const numbersList = [];
 
     for (let i = 9; i > 0; i--) {
-      numbersList.push(<button>{i}</button>);
+      numbersList.push(<button onClick={()=> setResult(result + i)}>{i}</button>);
     }
     return numbersList;
   };
@@ -13,7 +20,7 @@ function App() {
       <div className="calculator">
 
       <div className ="display">
-<span>(0)</span> 0
+<span>(0)</span> {result}
 
       </div>
       <div className="digits">
