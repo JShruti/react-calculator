@@ -1,10 +1,12 @@
 import { useState } from "react";
  function App() {
-// const[calc, setCalc] = useState(0);
+const[calc, setCalc] = useState(0);
 const [result, setResult]=useState(0);
 
 
-
+const updateCalc = value => {
+    setCalc (calc +value);
+}
 
 
   
