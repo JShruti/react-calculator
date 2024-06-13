@@ -2,6 +2,7 @@ import { useState } from "react";
 function App() {
   const [result, setResult] = useState(0);
   const [firstNumber, setFirstNumber] = useState([]);
+  const [operator, setOperator] = useState('');
 
   const getNumber = () => {
     let number = 0;
@@ -42,10 +43,10 @@ function App() {
           <button>=</button>
         </div>
         <div className="operator">
-          <button>/</button>
-          <button>*</button>
-          <button>-</button>
-          <button>+</button>
+          <button onClick={() => setOperator('/')}>/</button>
+          <button onClick={() => setOperator('*')}>*</button>
+          <button onClick={() => setOperator('-')}>-</button>
+          <button onClick={() => setOperator('+')}>+</button>
           <button>%</button>
         </div>
         <div className="specialOperator">
